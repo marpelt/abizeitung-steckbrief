@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Steckbrief - Abizeitung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #1e1e1e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .description {
+            margin-bottom: 40px;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .highlight {
+            background: #fff3b0;
+            border-left: 6px solid #ffd500;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 6px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            background: white;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 14px 26px;
+            border-radius: 6px;
+            font-weight: bold;
+            color: white;
+            background: #007bff;
+            transition: transform 0.15s ease, background 0.15s ease;
+        }
+
+        .buttons a:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 800px) {
+            .images {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="description">
+        <p>
+            Das ist das Layout für den Steckbrief. In die grünen Bereiche werden die Bilder von dir eingefügt. Der gelbe Bereich ist für euer persönliches Rezept gedacht.
+        </p>
+
+        <section class="images">
+            <img src="MockUp.png" alt="Beispiel mit ausgefülltem Rezept">
+            <img src="MockUp2.png" alt="Beispiel mit leerem, gelbem Gestaltungsbereich">
+        </section>
+
+        <div class="highlight">
+            <strong>Wichtig:</strong>  
+            Der <strong>gelb markierte Bereich</strong> ist der Bereich, der zur freien Gestaltung steht. Ihr könnt unten die Vorlage als PDF-, PNG- oder Worddatei herunterladen.
+        </div>
+    </div>
+
+    <section class="buttons">
+        <a href="Rezept-Blanko.pdf" download>⬇ Download als PDF</a>
+        <a href="Rezept-Blanko.png" download>⬇ Download als PNG</a>
+        <a href="Rezept-Blanko.docx" download>⬇ Download als DOCX</a>
+    </section>
+
+    </main>
+</body>
+</html>
